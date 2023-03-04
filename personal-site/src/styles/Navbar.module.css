@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    height: 4em;
+}
+.logo {
+    padding: 1em;
+    background-color: aqua;
+}
+.linkwrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: aqua;
+    list-style: none;
+    height: 100%;
+    width: 20%;
+}
+.link {
+    background-color: azure;
+    padding: .25em;
+    border-bottom: solid black 2px;
+}
+a {
+    text-decoration: none;
+    color: black;   
+}
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    padding: 1em;
+}
+.test {
+    background-color: rgb(177, 152, 202);
+    height: 50em;
+}
