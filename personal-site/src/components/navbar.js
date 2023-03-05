@@ -1,20 +1,50 @@
 import React from 'react';
 import NavStyles from '../styles/Navbar.module.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
-    const [scrollState, setscrollState] = useState(false);
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.scrollY
+    const [scrollState, setscrollState] = useState({
+        currentScroll:0,
+        lastScroll: 0
+    });
+    const [visible, setvisible] = useState(true);
 
-    })
-    
+    useEffect(() => {
+        const handleScroll = () => {
+            setscrollState(prevState => {
+                return {
+                    currentScroll: window.scrollY,
+                    lastScroll: prevState.currentScroll
+                }
+            })
+            
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        };
+    }, []);
+
+    useEffect(() => {
+        if (scrollState.currentScroll > scrollState.lastScroll) {
+            console.log('scrolling down')
+            setvisible(false)
+        }
+        if (scrollState.currentScroll < scrollState.lastScroll) {
+            console.log('scrolling up')
+            setvisible(true)
+        }
+
+    }, [scrollState]);
+
+
     return (
         <div>
 
-            <nav className={NavStyles.wrapper}>
+            <nav className={`${NavStyles.wrapper} ${visible ? NavStyles.scrollup : NavStyles.scrolldown} `}>
+            
 
-                <div className={NavStyles.logo}>
+                <div className={`${NavStyles.logo}`}>
                     Logo
                 </div>
                     
