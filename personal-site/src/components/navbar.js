@@ -8,7 +8,7 @@ const Navbar = () => {
         lastScroll: 0
     });
     const [visible, setvisible] = useState(true);
-
+    const [atTop, setatTop] = useState(true);
     useEffect(() => {
         const handleScroll = () => {
             setscrollState(prevState => {
@@ -26,13 +26,20 @@ const Navbar = () => {
     }, []);
 
     useEffect(() => {
+        if (scrollState.currentScroll < scrollState.lastScroll && scrollState.lastScroll !== 0) {
+            console.log('scrolling up')
+            setvisible(true)
+            setatTop(false)
+        }
         if (scrollState.currentScroll > scrollState.lastScroll) {
             console.log('scrolling down')
             setvisible(false)
+            setatTop(false)
         }
-        if (scrollState.currentScroll < scrollState.lastScroll) {
-            console.log('scrolling up')
-            setvisible(true)
+        if (scrollState.currentScroll <= 0) {
+            console.log('At top')
+            setatTop(true)
+            
         }
 
     }, [scrollState]);
@@ -41,7 +48,7 @@ const Navbar = () => {
     return (
         <div>
 
-            <nav className={`${NavStyles.wrapper} ${visible ? NavStyles.scrollup : NavStyles.scrolldown} `}>
+            <nav className={`${NavStyles.wrapper} ${visible ? NavStyles.scrollup : NavStyles.scrolldown} ${atTop ? NavStyles.top : null } `}>
             
 
                 <div className={`${NavStyles.logo}`}>
@@ -62,13 +69,8 @@ const Navbar = () => {
                         <a href="">Contact</a>
                     </div>
                     <div className={NavStyles.link}>
-                    <a href="">Blog</a>
+                        <a href="">Resume</a>
                     </div>
-                </div>
-
-                <div className={NavStyles.resume}>
-                    
-                    <a href="">Resume</a>
                 </div>
 
             </nav> 

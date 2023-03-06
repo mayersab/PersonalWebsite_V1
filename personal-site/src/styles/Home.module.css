@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 5em;
+}
+span {
+    color: #F4E04D;
+}
+button {
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1em;
+    border: solid #F4E04D 1px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93.5vh;
+}
+.content {
+    margin: 0;
+}
+#hello {
+    color: #F4E04D;
+    font-weight: normal;
+}
+#name {
+    color: rgba(255, 255, 255, 0.8);
+}
+#design {
+    color: rgba(255, 255, 255, 0.3);
+}
+#developer {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: normal;
+}
