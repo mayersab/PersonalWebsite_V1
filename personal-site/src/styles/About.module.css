@@ -7,28 +7,51 @@
 }
 #about {
     position: absolute;
-    top: -120px;
-    left: -15px;
+    top: -110px;
+    left: 0;
     color: rgba(244, 225, 77, 0.2);
     font-weight: normal;
-    font-size: 30rem;
+    font-size: 23rem;
 }
 .mystory {
-    /* background-color: aliceblue;  */
+    /* background-color: aqua;  */
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr;
-    position: absolute;
-    top: 25%;
+    /* position: absolute; */
+    /* top: 25%; */
     z-index: 99;
     width: 55%;
 }
 .pic {
-    height: 25rem;
+    display: flex;
+    justify-content: center;
+    height: 30rem;
     width: 22.5rem;
-    background-color: aqua;
+    border-radius: 50px;
+}
+.pic img {
+    max-height: 100%;
+    max-width: 100%;
     border-radius: 50px;
 }
 .me {
-    color:rgba(255, 255, 255, 0.45);
+    color:rgba(255, 255, 255, 0.6);
+    font-size: 1.125em;
+}
+.me ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.skillwrapper {
+    display: flex;
+}
+.first {
+    margin-right: 1em;
+}
+.second {
+    
 }

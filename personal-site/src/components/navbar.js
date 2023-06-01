@@ -19,6 +19,7 @@ const Navbar = () => {
             })
             
         }
+        
         window.addEventListener('scroll', handleScroll)
         return () => {
             window.removeEventListener('scroll', handleScroll)
@@ -56,20 +57,15 @@ const Navbar = () => {
                 </div>
                     
                 <div className={NavStyles.linkwrapper}>
+  
                     <div className={NavStyles.link}>
-                        <a href="">Home</a>
-                    </div>
-                    <div className={NavStyles.link}>
-                        <a href="">About</a>
+                        <a href="">Blog</a>
                     </div>
                     <div className={NavStyles.link}>
                         <a href="">Work</a>
                     </div>
                     <div className={NavStyles.link}>
                         <a href="">Contact</a>
-                    </div>
-                    <div className={NavStyles.link}>
-                        <a href="">Resume</a>
                     </div>
                 </div>
 

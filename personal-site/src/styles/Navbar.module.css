@@ -41,17 +41,13 @@
     border-bottom: solid #F4E04D 2px;
     color: #F4E04D;
 } */
-a {
+.link a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.45);
     transition: all 200ms ease-in-out;  
 }
-a:hover {
+.link a:hover {
     color: #F4E04D;
-}
-.test {
-    background-color: #234760;
-    height: 50em;
 }
 
 /* Scroll */

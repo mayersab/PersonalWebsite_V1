@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutStyles from '../styles/About.module.css'
+import me from '../photo/me.jpeg'
 
 const About = () => {
     return (
@@ -9,21 +10,40 @@ const About = () => {
             <div className={AboutStyles.mystory}>
 
                     <div className={AboutStyles.pic}>
-
+                        <img src={me} alt="randomblackdude" />
                     </div>
 
                     <div className={AboutStyles.me}>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatem doloremque facere ducimus sint alias corporis repellat, nisi omnis laudantium, nesciunt cumque architecto nihil qui asperiores? Sapiente nemo atque odio? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum velit eaque atque, nemo saepe doloremque laboriosam vero voluptas nihil voluptatibus sapiente a fuga et facere veritatis aliquam laudantium aperiam. Eius!
+                            Hey there, I'm Zach! a fullstack developer with a passion for building and design. For as long as I can remember, I've been curious about things. Something about taking an idea through the process of materialization amazed me. Eventually my curiousity lead me to take on the technologies of the web and I haven't looked back since.
                         </p>
+                        <br />
                         <p>
-                            Quas voluptatem aut ut? Quis unde accusantium, sit fugit cupiditate voluptatem obcaecati optio voluptate sapiente magni eum delectus doloremque, ex consequatur iste illum dicta itaque nam! Harum quaerat deserunt in.
-                            Eos soluta delectus mollitia id, porro, excepturi vitae sunt quos ipsam doloremque dolore tempora ad ratione consequuntur commodi harum? Consequatur doloremque enim dicta pariatur odit libero delectus explicabo adipisci consectetur.
-                        </p>
-                        <p>
-                            Animi ipsum temporibus quas placeat necessitatibus obcaecati quidem ea esse, doloremque nesciunt quod, voluptatum minus repellat ipsa. Delectus sequi perspiciatis similique ipsam vel sint officiis aut quas natus, rem cupiditate?
-                            Fugiat, magnam consectetur? Exercitationem, totam? Vel, nam quo? Possimus qui ea quod! Atque nemo soluta porro quia mollitia, sunt deleniti aperiam, aut aliquid reprehenderit placeat nam excepturi
+                            Today, my focus is to deliver value through the quality of my work by drawing on my expieriences as a web developer.
                         </p> 
+                        <br />
+                        <p>
+                            Tools and technologies that I use:
+                        </p>
+                        <br />
+                        <div className={AboutStyles.skillwrapper}>
+
+                            <div className={AboutStyles.first}>
+                                <ul>
+                                    <li>JavaScript (ES6+)</li>
+                                    <li>React</li>
+                                    <li>Node.js</li>
+                                </ul>
+                            </div>
+
+                            <div className={AboutStyles.second}>
+                                <ul>
+                                    <li>Wordpress</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
                     </div>
 
             </div>

@@ -1,8 +1,7 @@
 import Navbar from "./components/navbar";
 import About from "./Pages/about";
-import Testdiv from "./components/testdiv";
+import Portfolio from "./Pages/portfolio";
 import Hero from './Pages/hero'
-import Projects from "./Pages/projects";
 import './App.css'
 
 function App() {
@@ -11,7 +10,8 @@ function App() {
       <Navbar/>
       <Hero/>
       <About/>
-      {/* <Projects/> */}
+      <Portfolio/>
+      
 
     </div>
   );

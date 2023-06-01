@@ -1,0 +1,100 @@
+/* #234c60*/
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aliceblue; */
+    margin-bottom: 5em;
+    /* position: relative; */
+}
+.screenshot {
+    background-color: green;
+    border-radius: 5px;
+    height: 17rem;
+    width: 32.5rem;
+    position: relative;
+    filter: drop-shadow(0px 0 6px rgb(10, 10, 10));
+}
+.screenshot img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: contain;
+}
+.overlay {
+    position: absolute;
+    background-color: rgba(244, 225, 77, 0.3); 
+    height: 100%;
+    width: 100%;
+    transition: all 200ms ease-in-out;
+    border-radius: 5px;
+}
+.overlay:hover {
+    opacity: 0;
+}
+.project_card {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    color:rgba(255, 255, 255, 0.6);
+}
+.project_title {
+    text-align: end;
+}
+.project_title h2 {
+    margin: 0 0 1em 0;
+    color:rgba(255, 255, 255, 0.7);
+    font-weight: normal;
+}
+.project_description {
+    background-color: #234760;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: right;
+    border: solid rgba(244, 225, 77, 0.4) 1px;
+    filter: drop-shadow(1px 0 3px rgb(10, 10, 10));
+    transition: all 200ms ease-in-out; 
+}
+.project_description:hover {
+    filter: drop-shadow(1px 0 6px rgb(10, 10, 10));
+    background-color: #234c60;
+    
+}
+.project_technologies {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.project_technologies li {
+    margin: 1em 0 1em 1em;
+}
+.project_links {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.project_links a {
+    text-decoration: none;
+    margin: 0 0 0 1em;
+    color:rgba(255, 255, 255, 0.6);
+    transition: all 400ms ease-in-out;
+    background-color: #234760;
+    padding: 0.25rem;
+    border-radius: 5px;
+}
+.project_links a:hover {
+    color: #F4E04D;
+    filter: drop-shadow(0px 0 6px rgb(10, 10, 10));
+}
+.icon {
+    height: 2rem;
+    width: 2rem;
+}
+.icon img {
+    height: 100%;
+    width: 100%;
+    
+}
