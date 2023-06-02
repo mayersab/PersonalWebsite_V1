@@ -48,6 +48,9 @@
     color:rgba(255, 255, 255, 0.7);
     font-weight: normal;
 }
+.project_number p {
+    color: #F4E04D;
+}
 .project_description {
     background-color: #234760;
     border-radius: 5px;

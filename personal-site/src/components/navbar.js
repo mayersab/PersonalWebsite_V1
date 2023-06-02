@@ -57,15 +57,18 @@ const Navbar = () => {
                 </div>
                     
                 <div className={NavStyles.linkwrapper}>
-  
+                
                     <div className={NavStyles.link}>
-                        <a href="">Blog</a>
+                        <a href=""><span id={NavStyles.home}>Home</span></a>
                     </div>
                     <div className={NavStyles.link}>
-                        <a href="">Work</a>
+                        <a href=""><span id={NavStyles.about}>About</span></a>
                     </div>
                     <div className={NavStyles.link}>
-                        <a href="">Contact</a>
+                        <a href=""><span id={NavStyles.work}>Work</span></a>
+                    </div>
+                    <div className={NavStyles.link}>
+                        <a href=""><span id={NavStyles.contact}>Contact</span></a>
                     </div>
                 </div>
 

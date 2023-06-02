@@ -3,10 +3,8 @@
     box-sizing: border-box;
     
 }
-span {
-    color: #F4E04D;
-}
-button {
+
+.content button {
     padding: .75em 1.5em;
     border-radius: 5px;
     background-color: transparent;
@@ -32,14 +30,23 @@ button {
     font-size: 5rem;
     font-weight: normal;
 }
+#name span {
+    color: #F4E04D;
+}
 #design {
     color: rgba(255, 255, 255, 0.3);
     font-size: 5rem;
     font-weight: normal;
+}
+#design span {
+    color: #F4E04D;
 }
 #developer {
     color: rgba(255, 255, 255, 0.8);
     font-weight: normal;
     margin: 1rem 0;
     
+}
+#developer span {
+    color: #F4E04D;
 }

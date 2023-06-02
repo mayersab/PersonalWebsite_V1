@@ -1,0 +1,45 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #234c60;
+    filter: none;
+    border-radius: 5px;
+    width: 30rem;
+    margin: 10rem 0;
+    padding: 2rem;
+    transition: all 200ms ease-in-out;
+    border: solid rgba(244, 225, 77, 0.4) 1px; 
+}
+.contactme:hover {
+    filter: drop-shadow(0 0 6px rgb(10, 10, 10));
+}
+.heading {
+    /* background-color: aliceblue; */
+    margin-bottom: 2rem;
+}
+.heading h2 {
+    font-size: 2rem;
+    color:rgba(255, 255, 255, 0.7);
+}
+.excerpt {
+    text-align: center;
+    color:rgba(255, 255, 255, 0.4);
+    /* background-color: aqua; */
+    margin-bottom: 2rem;
+}
+.contactbtn {
+    padding: .75em 1.5em;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1rem;
+    border: solid rgba(244, 225, 77, 0.4) 1px; 
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}

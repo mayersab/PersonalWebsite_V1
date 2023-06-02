@@ -4,7 +4,7 @@ import ProjectStyles from '../styles/Projects.module.css'
 
 
 
-const Testdiv = ({title, description, photo, tech1, tech2, tech3, tech4, tech5}) => {
+const Projects = ({number, title, description, photo, tech1, tech2, tech3, tech4, tech5}) => {
 
     const [state, setstate] = useState([tech1, tech2, tech3, tech4, tech5]);
     
@@ -16,6 +16,7 @@ const Testdiv = ({title, description, photo, tech1, tech2, tech3, tech4, tech5})
             </div>
             <div className={ProjectStyles.project_card}>
                 <div className={ProjectStyles.project_title}>
+                <div className={ProjectStyles.project_number}><p>{number}</p></div>
                     <h2>{title}</h2>
                 </div>
                 <div className={ProjectStyles.project_description}>
@@ -48,4 +49,4 @@ const Testdiv = ({title, description, photo, tech1, tech2, tech3, tech4, tech5})
     );
 }
 
-export default Testdiv;
+export default Projects;

@@ -33,9 +33,62 @@
     width: 20%;
 }
 .link {
-    padding: .25em;
+    padding: 1em;
     border-bottom: solid transparent 2px;
     transition: all 200ms ease-in-out;
+    position: relative;
+    
+}
+#home::before {
+    content: "01.";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 1.35em;
+    font-size: 0.7rem;
+    color: #F4E04D;
+    transition: all 200ms ease-in-out;
+    
+}
+#about::before {
+    content: "02.";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 1.25em;
+    font-size: 0.7rem;
+    color: #F4E04D;
+    transition: all 200ms ease-in-out;
+    
+}
+#work::before {
+    content: "03.";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 1.25em;
+    font-size: 0.7rem;
+    color: #F4E04D;
+    transition: all 200ms ease-in-out;
+    
+}
+#contact::before {
+    content: "04.";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 1.25em;
+    font-size: 0.7rem;
+    color: #F4E04D;
+    transition: all 200ms ease-in-out;
+    
+}
+#home:hover::before,
+#about:hover::before,
+#work:hover::before,
+#contact:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    
 }
 /* .link:hover {
     border-bottom: solid #F4E04D 2px;
@@ -43,8 +96,9 @@
 } */
 .link a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.45);
-    transition: all 200ms ease-in-out;  
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 200ms ease-in-out;
+    font-size: 1.125rem;  
 }
 .link a:hover {
     color: #F4E04D;

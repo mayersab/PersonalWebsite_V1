@@ -15,6 +15,7 @@ const Portfolio = () => {
             </div>
             <div>
                 <Projects
+                    number={blogSite.number}
                     title={blogSite.title}
                     description={blogSite.description}
                     photo={blogSite.photo}
@@ -25,6 +26,7 @@ const Portfolio = () => {
                     tech5={blogSite.tech5}
                 />
                 <Projects
+                    number={cvApp.number}
                     title={cvApp.title}
                     description={cvApp.description}
                     photo={cvApp.photo}
@@ -32,6 +34,7 @@ const Portfolio = () => {
                     tech2={cvApp.tech2}
                 />
                 <Projects
+                    number={todo.number}
                     title={todo.title}
                     photo={todo.photo}
                     description={todo.description}

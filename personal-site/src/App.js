@@ -2,6 +2,7 @@ import Navbar from "./components/navbar";
 import About from "./Pages/about";
 import Portfolio from "./Pages/portfolio";
 import Hero from './Pages/hero'
+import Contact from "./Pages/contact";
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Hero/>
       <About/>
       <Portfolio/>
+      <Contact/>
       
 
     </div>
