@@ -9,6 +9,7 @@ const Projects = ({number, title, description, photo, tech1, tech2, tech3, tech4
     const [state, setstate] = useState([tech1, tech2, tech3, tech4, tech5]);
     
     return (
+        <div className={ProjectStyles.test}>
         <div className={ProjectStyles.wrapper}>
             <div className={ProjectStyles.screenshot}>
                 <img src={photo} alt="" />
@@ -24,6 +25,7 @@ const Projects = ({number, title, description, photo, tech1, tech2, tech3, tech4
                 </div>
                 <div>
                     <ul className={ProjectStyles.project_technologies}>
+                    
                         {state && state.map((item) => {
                             if (item !== undefined) {
                                 return (
@@ -45,6 +47,7 @@ const Projects = ({number, title, description, photo, tech1, tech2, tech3, tech4
             </div>
 
 
+        </div>
         </div>
     );
 }

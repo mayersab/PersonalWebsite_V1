@@ -9,7 +9,7 @@ import { blogSite, todo, cvApp } from '../project_descriptions/data';
 const Portfolio = () => {
 
     return (
-        <div>
+        <div className={PortStyles.wrapper}>
             <div className={PortStyles.container}>
                 <h1 id={PortStyles.projects}>Projects</h1>
             </div>

@@ -1,5 +1,7 @@
+.wrapper {
+    margin-top: 2rem;
+}
 .container {
-    /* background-color: aqua; */
     position: relative;
     height: 25rem;
     z-index: -99;
@@ -11,6 +13,29 @@
     color: rgba(244, 225, 77, 0.2);
     font-weight: normal;
     font-size: 23rem;
-    -webkit-text-stroke: 2px #234c60;
     
+}
+@media (min-width: 769px) and (max-width: 1279px) {
+    .container {
+        position: static;
+        text-align: center;
+        height: max-content;
+    }
+    #projects {
+        position: static;
+        font-size: clamp(60px, 10vh, 160px);
+        color: rgba(244, 225, 77, 0.5);
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        position: static;
+        text-align: center;
+        height: max-content;
+    }
+    #projects {
+        position: static;
+        font-size: clamp(60px, 7vh, 160px);
+        color: rgba(244, 225, 77, 0.5);
+    }
 }

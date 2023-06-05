@@ -49,15 +49,14 @@ const Navbar = () => {
     return (
         <div>
 
-            <nav className={`${NavStyles.wrapper} ${visible ? NavStyles.scrollup : NavStyles.scrolldown} ${atTop ? NavStyles.top : null } `}>
-            
+            <nav >
+            <div className={`${NavStyles.wrapper} ${visible ? NavStyles.scrollup : NavStyles.scrolldown} ${atTop ? NavStyles.top : null } `}>
 
                 <div className={`${NavStyles.logo}`}>
                     Logo
                 </div>
                     
                 <div className={NavStyles.linkwrapper}>
-                
                     <div className={NavStyles.link}>
                         <a href=""><span id={NavStyles.home}>Home</span></a>
                     </div>
@@ -71,7 +70,20 @@ const Navbar = () => {
                         <a href=""><span id={NavStyles.contact}>Contact</span></a>
                     </div>
                 </div>
-
+                <div className={NavStyles.hamburgerwrapper}>
+                    <label className={NavStyles.hamburger_menu}>
+                        <input type="checkbox"/>
+                    </label>
+                    <aside className={NavStyles.sidebar}>
+                        <nav>
+                            <div>Home</div>
+                            <div>About</div>
+                            <div>Work</div>
+                            <div>Contact</div>
+                        </nav>
+                    </aside>
+                </div>
+            </div>
             </nav> 
 
         </div>

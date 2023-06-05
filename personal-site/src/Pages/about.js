@@ -5,7 +5,10 @@ import me from '../photo/me.jpeg'
 const About = () => {
     return (
         <div className={AboutStyles.heading}>
+        <div className={AboutStyles.title}>
             <h1 id={AboutStyles.about}>About</h1>
+        </div>
+            
 
             <div className={AboutStyles.mystory}>
 

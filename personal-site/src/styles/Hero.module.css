@@ -1,52 +1,54 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    
 }
+.content {
+    /* background-color: gray; */
+    margin: 2rem;
 
+}
 .content button {
     padding: .75em 1.5em;
     border-radius: 5px;
     background-color: transparent;
     font-size: 1rem;
-    border: solid #F4E04D 1px;
-    color: rgba(255, 255, 255, 0.8);
-    
+    border: solid var(--secondary-color) 1px;
+    color: rgba(255, 255, 255, 0.8);   
 }
-
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 100vh;
 }
 #hello {
-    color: #F4E04D;
+    color: var(--secondary-color);
     font-weight: normal;
+    /* background-color: bisque; */
 }
 #name {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 5rem;
+    font-size: clamp(40px, 8vw, 80px);
     font-weight: normal;
 }
 #name span {
-    color: #F4E04D;
+    color: var(--secondary-color);
 }
 #design {
     color: rgba(255, 255, 255, 0.3);
-    font-size: 5rem;
+    font-size: clamp(40px, 8vw, 80px);
     font-weight: normal;
 }
 #design span {
-    color: #F4E04D;
+    color: var(--secondary-color);
 }
 #developer {
     color: rgba(255, 255, 255, 0.8);
     font-weight: normal;
     margin: 1rem 0;
+    font-size: clamp(16px, 2vw, 19px);
     
 }
 #developer span {
-    color: #F4E04D;
+    color: var(--secondary-color);
 }
