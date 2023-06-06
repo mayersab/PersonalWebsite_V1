@@ -1,7 +1,15 @@
 import React from 'react';
 import NavStyles from '../styles/Navbar.module.css'
 import { useState, useEffect } from 'react';
+/*
+***TO-DO***
+- Convert to Gatsby 
+- Make sure anchor tags navitgate appropriately
+- Add loading / scroll animations 
+- Add logo + hero background image
+- Look over and refactor css if needed
 
+*/
 const Navbar = () => {
     const [scrollState, setscrollState] = useState({
         currentScroll:0,
@@ -9,6 +17,22 @@ const Navbar = () => {
     });
     const [visible, setvisible] = useState(true);
     const [atTop, setatTop] = useState(true);
+    const [isHamClicked, setisHamClicked] = useState(false);
+
+    const remove = () => {
+        document.getElementById('checkbox').checked = false
+        document.body.classList.remove('blur')
+    }
+    useEffect(() => {
+    const lockedScroll = () => {
+        if (isHamClicked) {
+            document.body.classList.add('blur')
+        } else {
+            document.body.classList.remove('blur')
+        }
+    }
+        lockedScroll()
+    }, [isHamClicked]);
     useEffect(() => {
         const handleScroll = () => {
             setscrollState(prevState => {
@@ -58,28 +82,28 @@ const Navbar = () => {
                     
                 <div className={NavStyles.linkwrapper}>
                     <div className={NavStyles.link}>
-                        <a href=""><span id={NavStyles.home}>Home</span></a>
+                        <a href="#hero"><span id={NavStyles.home}>Home</span></a>
                     </div>
                     <div className={NavStyles.link}>
-                        <a href=""><span id={NavStyles.about}>About</span></a>
+                        <a href="#aboutme"><span id={NavStyles.about}>About</span></a>
                     </div>
                     <div className={NavStyles.link}>
-                        <a href=""><span id={NavStyles.work}>Work</span></a>
+                        <a href="#portfolio"><span id={NavStyles.work}>Work</span></a>
                     </div>
                     <div className={NavStyles.link}>
-                        <a href=""><span id={NavStyles.contact}>Contact</span></a>
+                        <a href="#contact"><span id={NavStyles.contact}>Contact</span></a>
                     </div>
                 </div>
                 <div className={NavStyles.hamburgerwrapper}>
                     <label className={NavStyles.hamburger_menu}>
-                        <input type="checkbox"/>
+                        <input id="checkbox" type="checkbox" onClick={() => setisHamClicked(!isHamClicked)}/>
                     </label>
                     <aside className={NavStyles.sidebar}>
                         <nav>
-                            <div>Home</div>
-                            <div>About</div>
-                            <div>Work</div>
-                            <div>Contact</div>
+                            <div><a onClick={() => remove()} href='#hero' id={NavStyles.sbhome}>Home</a></div>
+                            <div><a onClick={() => remove()}  href='#aboutme' id={NavStyles.sbabout}>About</a></div>
+                            <div><a onClick={() => remove()}  href='#portfolio' id={NavStyles.sbwork}>Work</a></div>
+                            <div><a onClick={() => remove()}  href='#contact' id={NavStyles.sbcontact}>Contact</a></div>
                         </nav>
                     </aside>
                 </div>

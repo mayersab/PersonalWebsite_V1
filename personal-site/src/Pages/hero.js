@@ -4,7 +4,7 @@ import HeroStyles from '../styles/Hero.module.css'
 
 const Hero = () => {
     return (
-        <div className={HeroStyles.wrapper}>
+        <div id='hero' className={HeroStyles.wrapper}>
             <div className={HeroStyles.content}>
                 <div>
                     <h3 id={HeroStyles.hello}>Hello there, my name is</h3>
@@ -19,7 +19,7 @@ const Hero = () => {
                     <h3 id={HeroStyles.developer}>I'm a <span>fullstack developer</span> with a passion for bringing ideas to life.</h3>
                 </div>
                 
-                <button>Resume</button>
+                <a href="mailto:mayersz01@outlook.com"><button>Contact</button></a>
             </div>
         </div>
     );

@@ -2,7 +2,7 @@ import React from 'react';
 import ContactStyles from '../styles/Contact.module.css'
 const Contact = () => {
     return (
-        <div className={ContactStyles.wrapper}>
+        <div id='contact' className={ContactStyles.wrapper}>
             <div className={ContactStyles.contactme}>
                 <div className={ContactStyles.heading}>
                     <h2>Wanna Get In Contact?</h2>

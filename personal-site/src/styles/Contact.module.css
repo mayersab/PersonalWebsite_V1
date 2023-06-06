@@ -12,7 +12,7 @@
     filter: none;
     border-radius: 5px;
     width: 30rem;
-    margin: 10rem 0;
+    margin: 10rem 1.5rem;
     padding: 2rem;
     transition: all 200ms ease-in-out;
     border: solid rgba(244, 225, 77, 0.4) 1px; 
@@ -25,6 +25,7 @@
     margin-bottom: 2rem;
 }
 .heading h2 {
+    text-align: center;
     font-size: 2rem;
     color:rgba(255, 255, 255, 0.7);
 }

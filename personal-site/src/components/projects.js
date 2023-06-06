@@ -4,7 +4,7 @@ import ProjectStyles from '../styles/Projects.module.css'
 
 
 
-const Projects = ({number, title, description, photo, tech1, tech2, tech3, tech4, tech5}) => {
+const Projects = ({number, title, description, photo, code, demo, tech1, tech2, tech3, tech4, tech5}) => {
 
     const [state, setstate] = useState([tech1, tech2, tech3, tech4, tech5]);
     
@@ -41,8 +41,8 @@ const Projects = ({number, title, description, photo, tech1, tech2, tech3, tech4
                     </ul>
                 </div>
                 <div className={ProjectStyles.project_links}>
-                    <div><a href="">GitHub</a></div>
-                    <div><a href="">View Site</a></div>
+                    <div><a href={code}>GitHub</a></div>
+                    <div><a href={demo}>View Site</a></div>
                 </div>
             </div>
 
