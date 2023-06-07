@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 /*
 ***TO-DO***
 - Convert to Gatsby 
-- Make sure anchor tags navitgate appropriately
+- Deploy blog app
 - Add loading / scroll animations 
 - Add logo + hero background image
 - Look over and refactor css if needed
@@ -76,9 +76,7 @@ const Navbar = () => {
             <nav >
             <div className={`${NavStyles.wrapper} ${visible ? NavStyles.scrollup : NavStyles.scrolldown} ${atTop ? NavStyles.top : null } `}>
 
-                <div className={`${NavStyles.logo}`}>
-                    Logo
-                </div>
+                <a href="#hero"><div className={`${NavStyles.logo}`}></div></a>
                     
                 <div className={NavStyles.linkwrapper}>
                     <div className={NavStyles.link}>
