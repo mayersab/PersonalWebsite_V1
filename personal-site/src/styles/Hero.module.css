@@ -6,13 +6,15 @@
     
 }
 
+
 .content button {
     padding: .75em 1.5em;
     border-radius: 5px;
     background-color: transparent;
     font-size: 1rem;
     border: solid var(--secondary-color) 1px;
-    color: rgba(255, 255, 255, 0.8);   
+    color: rgba(255, 255, 255, 0.8);
+    animation: fade-up 1s ease-in-out;   
 }
 
 
@@ -25,14 +27,14 @@
 #hello {
     color: var(--secondary-color);
     font-weight: normal;
-    /* background-color: bisque; */
-    animation: fade-in 1s ease-in-out;
+    animation: fade-up 0.5s ease-in-out;
+    
 }
 #name {
     color: rgba(255, 255, 255, 0.8);
     font-size: clamp(40px, 8vw, 80px);
     font-weight: normal;
-    animation: fade-in 1s ease-in-out;
+    animation: fade-up 0.62s ease-in-out;
 }
 #name span {
     color: var(--secondary-color);
@@ -41,7 +43,7 @@
     color: rgba(255, 255, 255, 0.3);
     font-size: clamp(40px, 8vw, 80px);
     font-weight: normal;
-    animation: fade-in 1s ease-in-out 1s;
+    animation: fade-up 0.75s ease-in-out;
 }
 #design span {
     color: var(--secondary-color);
@@ -51,22 +53,25 @@
     font-weight: normal;
     margin: 1rem 0;
     font-size: clamp(16px, 2vw, 19px);
-    animation: fade-in 1s ease-in-out 1s;
+    animation: fade-up 0.9s ease-in-out;
     
 }
 #developer span {
     color: var(--secondary-color);
 }
-@keyframes fade-in {
+@keyframes fade-up {
     0% {
         opacity: 0;
+        transform: translateY(30px);
 
       }
     100% {
         opacity: 1;
+        transform: translateY(0);
         
 
     }
 
 }
+
 

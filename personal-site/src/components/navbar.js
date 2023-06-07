@@ -76,7 +76,7 @@ const Navbar = () => {
             <nav >
             <div className={`${NavStyles.wrapper} ${visible ? NavStyles.scrollup : NavStyles.scrolldown} ${atTop ? NavStyles.top : null } `}>
 
-                <a href="#hero"><div className={`${NavStyles.logo}`}></div></a>
+            <a onClick={() => remove()} href="#hero"><div className={`${NavStyles.logo}`}></div></a>
                     
                 <div className={NavStyles.linkwrapper}>
                     <div className={NavStyles.link}>

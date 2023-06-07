@@ -13,7 +13,7 @@ const About = () => {
             <div className={AboutStyles.mystory}>
 
                     <div className={AboutStyles.pic}>
-                        <img src={me} alt="randomblackdude" />
+                        <img src={me} alt="A picture of me" />
                     </div>
 
                     <div className={AboutStyles.me}>

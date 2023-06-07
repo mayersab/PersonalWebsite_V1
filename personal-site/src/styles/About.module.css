@@ -86,6 +86,7 @@
         position: static;
         font-size: clamp(60px, 7vh, 160px);
         color: rgba(244, 225, 77, 0.5);
+        margin-bottom: 1.5rem;
     }
     .mystory {
         display: flex;
