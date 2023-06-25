@@ -59,21 +59,15 @@
         flex-direction: column;
         align-items: center;
     } 
-    .title {
-        margin-bottom: 2rem;
-    }
     .mystory {
-        display: grid;
-        align-items: center;
-        justify-items: center;
         width: 95%;
         max-height: 100%;
-        
     }
     #about {
         position: static;
         font-size: clamp(60px, 10vh, 160px);
         color: rgba(244, 225, 77, 0.5);
+        margin-bottom: 2rem;
     }
 }
 @media (max-width: 768px) {
@@ -81,12 +75,10 @@
         flex-direction: column;
         align-items: center;
     } 
-
     #about {
         position: static;
         font-size: clamp(60px, 7vh, 160px);
         color: rgba(244, 225, 77, 0.5);
-        margin-bottom: 1.5rem;
     }
     .mystory {
         display: flex;
