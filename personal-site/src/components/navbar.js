@@ -23,6 +23,7 @@ const Navbar = () => {
         document.getElementById('checkbox').checked = false
         document.body.classList.remove('blur')
     }
+
     useEffect(() => {
     const lockedScroll = () => {
         if (isHamClicked) {
@@ -33,6 +34,7 @@ const Navbar = () => {
     }
         lockedScroll()
     }, [isHamClicked]);
+
     useEffect(() => {
         const handleScroll = () => {
             setscrollState(prevState => {
@@ -76,7 +78,6 @@ const Navbar = () => {
             <nav >
             <div className={`${NavStyles.wrapper} ${visible ? NavStyles.scrollup : NavStyles.scrolldown} ${atTop ? NavStyles.top : null } `}>
 
-            <a onClick={() => remove()} href="#hero"><div className={`${NavStyles.logo}`}></div></a>
                     
                 <div className={NavStyles.linkwrapper}>
                     <div className={NavStyles.link}>
