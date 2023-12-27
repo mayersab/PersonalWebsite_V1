@@ -1,4 +1,3 @@
-import React, {useEffect} from 'react';
 import Projects from "../components/projects";
 import PortStyles from "../styles/Portfolio.module.css"
 import { blogSite, todo, cvApp } from '../project_descriptions/data';

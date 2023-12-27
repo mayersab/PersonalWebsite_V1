@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import ProjectStyles from '../styles/Projects.module.css'
 
 
