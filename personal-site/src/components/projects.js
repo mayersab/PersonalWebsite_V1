@@ -6,7 +6,7 @@ import ProjectStyles from '../styles/Projects.module.css'
 
 const Projects = ({number, title, description, photo, code, demo, tech1, tech2, tech3, tech4, tech5}) => {
 
-    const [state, setstate] = useState([tech1, tech2, tech3, tech4, tech5]);
+    const [state] = useState([tech1, tech2, tech3, tech4, tech5]);
     
     return (
         <div className={ProjectStyles.test}>
